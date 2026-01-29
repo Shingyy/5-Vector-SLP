@@ -13,11 +13,11 @@ entity x_bit_mac is
     );
     port (
         CLK: in std_logic; -- 100MHz clock 
-        A0: in signed(X-1 downto 0);--A(0) first element of input vector
-        A1: in signed(X-1 downto 0);--A(1) second element of input vector
-        A2: in signed(X-1 downto 0);--A(2) third element of input vector
-        A3: in signed(X-1 downto 0);--A(3) fourth element of input vector
-        A4: in signed(X-1 downto 0);--A(4) last element of input vector
+        A0: in signed(X-1 downto 0);-- first element of input vector
+        A1: in signed(X-1 downto 0);-- second element of input vector
+        A2: in signed(X-1 downto 0);-- third element of input vector
+        A3: in signed(X-1 downto 0);-- fourth element of input vector
+        A4: in signed(X-1 downto 0);-- last element of input vector
         R: in std_logic;
         DOT_PRODUCT: out signed(2*X downto 0)
     );
